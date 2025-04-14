@@ -9,14 +9,16 @@
 </head>
 <body>
     <header class="header">
-        <span class="logo"><img src="img/logo.png">토론 게시판</span>
-        <span class="subject">AI와의 공존을 위해 필요한 일</span>
+        <ul class="clear">
+            <li><a href="#"><img class="logo" src="img/logo.png">토론 게시판</a></li>
+            <li><span class="subject">AI와의 공존을 위해 필요한 일</span></li>  
+        </ul>
     </header>
     <nav class="write">
         <form>
-            <input type="text" value="제목">
-            <input type="text" value="내용">
-            <input type="datetime" value="날자">
+            <input type="text" value="작성자"name="user">
+            <input type="text" value="내용" name="content">
+            <input type="datetime" value="날자" name="input_time">
         </form>
     </nav>
     <script type="text/html" id="tpl">
@@ -24,7 +26,7 @@
             <div class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#schedule-item#{seq}" aria-expanded="true" aria-controls="schedule-item#{seq}">
                     <span class="badge text-bg-info me-2">#{date}</span>
-                    #{title}
+                    #{user}
                 </button>
             </div>
             <div id="schedule-item#{seq}" class="accordion-collapse collapse" data-bs-parent="#schedule-items">
@@ -38,5 +40,5 @@
     <footer class="footer">
         <span>&copy;2025-04-14 all right reserved</span>
     </footer>
-</body>
+</body>git 
 </html>
