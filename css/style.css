@@ -14,14 +14,14 @@ header{
 }
 .write{
     div{position: relative;}
-    input{
+    input, textarea{
         border: 1px solid rgba(120, 120, 120, 0.7); 
     }
     input[name='user']{
         width: 90%;
         border-radius: 10px 10px 0 0;
     }
-    input[name='content']{
+    textarea{
         width: 90%; 
         height: auto; min-height: 5em;
         line-break: auto;
@@ -38,3 +38,4 @@ header{
     margin-bottom: 30px;
 }
 footer{font-size: 8px; color: #ccc; bottom: 0; width: 100%;}
+.
