@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded',function(){
-    removeEl(seq){
+    remove(seq){
         const index = this.items.findIndex((item) => item.seq = seq);
         if (index !== -1) {
             this.items.splice(index, 1);
