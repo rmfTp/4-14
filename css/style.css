@@ -1,5 +1,5 @@
-*{font:12px #444444; margin: 0; padding: 0; list-style: none; line-height: 1.2rem; align-items: center;border: 0; outline:none; text-decoration: none;}
-a{color: #444444;}
+*{font:12px #444444; list-style: none; line-height: 1.2rem; align-items: center;}
+a{color: #444444; text-decoration: none;}
 .clear::after{clear: both;}
 body{max-width: 750px; min-width: 350px; text-align: center; align-items: center; margin: 0 auto; padding: 0 0 100px;}
 header{ 
@@ -32,10 +32,9 @@ header{
         position: absolute;
         bottom: -30px; right: calc(5% + 5px);
         width: calc(15% + 30px); height: 25px;
-        border:1px solid #444444;
+        line-height: 0px;
         border-radius: 5px;
     }
     margin-bottom: 30px;
 }
 footer{font-size: 8px; color: #ccc; bottom: 0; width: 100%;}
-.
