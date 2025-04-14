@@ -15,11 +15,13 @@
         </ul>
     </header>
     <nav class="write">
-        <form>
-            <input type="text" value="작성자"name="user">
-            <input type="text" value="내용" name="content">
-            <input type="datetime" value="날자" name="input_time">
-        </form>
+        <div>
+            <form>
+                <input type="text"name="user">
+                <input type="textarea"name="content">
+            </form>
+            <button type="submit">저장</button>
+        </div>
     </nav>
     <script type="text/html" id="tpl">
         <div class="accordion-item" id="schedule-item-#{seq}">
@@ -40,5 +42,5 @@
     <footer class="footer">
         <span>&copy;2025-04-14 all right reserved</span>
     </footer>
-</body>git 
+</body>
 </html>
