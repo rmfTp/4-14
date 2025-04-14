@@ -19,8 +19,24 @@
             <input type="datetime" value="날자">
         </form>
     </nav>
-    <nav class='log'>
-        
-    </nav>
+    <script type="text/html" id="tpl">
+        <div class="accordion-item" id="schedule-item-#{seq}">
+            <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#schedule-item#{seq}" aria-expanded="true" aria-controls="schedule-item#{seq}">
+                    <span class="badge text-bg-info me-2">#{date}</span>
+                    #{title}
+                </button>
+            </div>
+            <div id="schedule-item#{seq}" class="accordion-collapse collapse" data-bs-parent="#schedule-items">
+                <div class="accordion-body">
+                    #{content}
+                    <button type="button" class="btn btn-danger btn-sm remove" data-seq="#{seq}">삭제</button>
+                </div>
+            </div>
+        </div>
+    </script>
+    <footer class="footer">
+        <span>&copy;2025-04-14 all right reserved</span>
+    </footer>
 </body>
 </html>
