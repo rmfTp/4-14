@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0m">
-    <title>-</title>
+    <title>AI와의 공존을 위해 필요한 일</title>
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+    <link rel="script"  type="text/js" href="js/script.js">
 </head>
 <body>
     <header class="header">
-        <span class="logo">자유 토론 게시판</span>
-        <span class="subject">토론 주제</span>
+        <span class="logo"><img src="img/logo.png">토론 게시판</span>
+        <span class="subject">AI와의 공존을 위해 필요한 일</span>
     </header>
+    <nav class="write">
+        <form>
+            <input type="text" value="제목">
+            <input type="text" value="내용">
+            <input type="datetime" value="날자">
+        </form>
+    </nav>
+    <script type="text/html" id="tpl">
+        <div class="accordion-item" id="schedule-item-#{seq}">
+            <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#schedule-item#{seq}" aria-expanded="true" aria-controls="schedule-item#{seq}">
+                    <span class="badge text-bg-info me-2">#{date}</span>
+                    #{title}
+                </button>
+            </div>
+            <div id="schedule-item#{seq}" class="accordion-collapse collapse" data-bs-parent="#schedule-items">
+                <div class="accordion-body">
+                    #{content}
+                    <button type="button" class="btn btn-danger btn-sm remove" data-seq="#{seq}">삭제</button>
+                </div>
+            </div>
+        </div>
+    </script>
+    <footer class="footer">
+        <span>&copy;2025-04-14 all right reserved</span>
+    </footer>
 </body>
 </html>
